@@ -7,6 +7,7 @@ before_install:
  - docker build -t nlaparo/react-test -f ./client/Dockerfile.dev ./client
 
 #script:
+# this test fails withh some Netwrok error that I cannot figure out
 # - docker run -e CI=true nlaparo/react-test npm test
 
 after_success:
@@ -21,6 +22,8 @@ after_success:
  - docker push nlaparo/multi-server
  - docker push nlaparo/multi-nginx
  - docker push nlaparo/multi-worker
+
+ 
 
 
 
