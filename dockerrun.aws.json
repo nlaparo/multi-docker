@@ -14,23 +14,19 @@
     "image": "nlaparo/multi-worker",
     "hostname": "worker",
     "essential": false,
-    "essential": false,
     "memory": 128
   },
   {
     "name": "server",
     "image": "nlaparo/multi-server",
     "hostname": "api",
-    "essential": false,
-    "essential": false,
     "memory": 128
   },
   {
     "name": "nginx",
     "image": "nlaparo/multi-nginx",
     "essential": true,
-    "essential": false,
-    "memory": 128
+    "memory": 128,
     "portMappings": [
      {
       "hostPost": 80,
