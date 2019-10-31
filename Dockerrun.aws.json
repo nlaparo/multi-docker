@@ -26,14 +26,15 @@
     "name": "nginx",
     "image": "nlaparo/multi-nginx",
     "essential": true,
-    "memory": 128,
+    "hostname": "nginx",
     "portMappings": [
      {
       "hostPost": 80,
       "containerPort": 80
      }
     ],
-    "links": ["client", "server"]
+    "links": ["client", "server"],
+    "memory": 128
   }
 
  ]
